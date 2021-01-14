@@ -18,3 +18,4 @@ git push origin master                           //将本地库推送到远程�
 git push -u orgin master                      // 将本地master分支推送到远程master分支且关联 ,一般第一次推送使用这个
 git checkout -b dev                               //创建一个新的分支并切换到分支，dev分支
 git branch                                              //查看当前所有的分支
+git checkout master                            //切换分支到master分支
