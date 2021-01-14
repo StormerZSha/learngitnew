@@ -1,0 +1,18 @@
+git init
+git add
+git commit
+
+git status  //查看状态
+git diff      //查看不同
+git log      //查看记录
+ HEAD表示当前版本，HEAD^表示上个版本，HEAD~n(n表示向前的n个版本)
+git reset  --hard HEAD^ //回退到上个版本
+git reset --hard 版本号     //到对应的版本
+git reflog                           //查看以前的命令，方便查看丢失的版本号
+git checkout -- 文件名     //丢弃工作区的修改，回到最近一次add或者commit
+git reset HEAD 文件名     //丢弃暂存区的修改，回到工作区
+git rm 文件名                    //删除版本库中的文件，无法找回
+如果删掉了工作区的，版本库的没删，可以使用git checkout -- 文件名找回
+将本地库与远程库关联  git remote add origin +加上连接地址
+将本地库推送到远程库 git push origin master
+将本地master分支推送到远程master分支且关联 ,一般第一次推送使用这个git push -u orgin master
