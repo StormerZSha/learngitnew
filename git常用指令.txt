@@ -16,6 +16,9 @@ git rm 文件名                    //删除版本库中的文件，无法找回
 git remote add origin +加上连接地址   //将本地库与远程库关联  
 git push origin master                           //将本地库推送到远程库 
 git push -u orgin master                      // 将本地master分支推送到远程master分支且关联 ,一般第一次推送使用这个
-git checkout -b dev                               //创建一个新的分支并切换到分支，dev分支
-git branch                                              //查看当前所有的分支
-git checkout master                            //切换分支到master分支
+git branch                                                             //查看所有分支
+git branch  分支名                                                 //创建分支
+git checkout 分支名/git switch 分支名                //切换分支
+git checkout -b 分支名/git switch -c 分支名       //创建并切换分支
+git merge 分支名                                                  //合并分支到当前分支
+git branch -d                                                      //删除分支
